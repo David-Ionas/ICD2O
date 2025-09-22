@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <h1>Date and Time</h1>
+  <!--date and time output-->
+  <p id="clock"></p>
+  <script>
+    setInterval(() => {
+      document.getElementById("clock").innerText = new Date().toLocaleTimeString();
+    }, 1000);
+  </script>
+
+  <h1>This is all practice</h1>
+  <p>Image Gallery</p>
+</head>
+<br>
+<hr>
+<div class="gallery">
+  <!---Gallery display ouput-->
+  <img src="./images/download (2).jpeg" alt="Error" />
+  <img src="./images/download (1).jpeg" alt="Error" />
+  <img src="./images/download (3).jpeg" alt="Error" />
+  <img src="./images/download.jpeg" alt="Error" />
+  <img src="./images/images.jpeg" alt="Error" />
+</div>
+<body>
+  
+  <h1>Video Frame</h1>
+  <!--Frame for video displayed-->
+<iframe width="560" height="350" src="https://www.youtube.com/embed/cQLiwu-KUdY?si=hoyMHz2RpbGKM5hC"
+  title="YouTube video player" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></body>
+
+  <h1>light/dark mode</h1>
+<!--tuns page to light or dark-->
+<button onclick="document.body.classList.toggle('dark')">Toggle Theme</button>
+<style>
+  .dark {
+    background-color: #000000;
+    color: white;
+  }
+</style>
+
+<div class="accordion">
+  <button class="accordion-btn">What is this?</button>
+  <div class="accordion-content">This is a cool accordion effect.</div>
+</div>
+
+<style>
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f1f1f1;
+    padding: 0 20px;
+  }
+
+  .accordion-btn {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .accordion-btn.active+.accordion-content {
+    max-height: 100px;
+    padding: 15px 20px;
+  }
+</style>
+
+<script>
+  const accBtns = document.querySelectorAll('.accordion-btn');
+  accBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+    });
+  });
+</script>
+
+
+</html>
