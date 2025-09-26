@@ -118,6 +118,41 @@
           <h4>Start Healthy, Stay Healthy</h4>
         </div>
 
+        <main class="mdl-layout__content">
+        
+            <form onsubmit="return false;">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="userInput">
+                <label class="mdl-textfield__label" for="userInput">Search text...</label>
+                <div style="padding-left: 50px;"></div>
+              </div>
+            </form>
+        
+            <button id="searchButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+              Press It
+              <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
+              <p>Search any meal here.</p>
+              
+            </button>
+          </div>
+        </main>
+        </div>
+        <script>
+          const button = document.getElementById('searchButton');
+          const input = document.getElementById('userInput');
+
+          button.addEventListener('click', function () {
+            const q = (input.value || '').trim();
+            const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+            window.open(url, '_blank');
+          });
+
+          document.getElementById('clearButton').addEventListener('click', () => {
+            document.getElementById('userInput').value = '';
+            document.getElementById('userInput').focus();
+          });
+        </script>
+
         <div class="demo-card-wide mdl-card mdl-shadow--2dp">
           <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Welcome</h2>
@@ -149,7 +184,6 @@
       <img src="./images/download (16).jpg" alt="Dark Chocolate Pudding">
       <img src="./images/download (15).jpg" alt="Fruit plate">
       <img src="./images/download (14).jpg" alt="Soft Tacos">
-      <img src="./images/download (13).jpg" alt="salade">
       <img src="./images/download (12).jpg" alt="Oatmeal">
       <img src="./images/download (5).jpeg" alt="Tuna Salade">
       <img src="./images/download (4).jpeg" alt="Chicken and Curry">
@@ -158,4 +192,5 @@
       <h6>Light/Dark Mode</h6>
       <button onclick="document.body.classList.toggle('dark')">Toggle Theme</button>
     </main>
+
     </html> 
