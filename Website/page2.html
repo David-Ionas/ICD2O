@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--this is the -->
+<html lang="en-ca">
+<head>
+
+  <!--Meta Data and favicons-->
+  <meta charset="utf-8">
+  <meta name="description" content="A nutrition food website">
+  <meta name="keyboards" content="food, healthy, good">
+  <meta name="author" content="David Ionas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png">
+
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        
+        <span class="mdl-layout-title" herf="index.html">Home</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigations menu. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="./index.html">Home</a>
+          <a class="mdl-navigation__link" href="./page2.html">Nutrition Snacks</a>
+          <a class="mdl-navigation__link" href="./page3.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--links to navigation-->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Title</span>
+      <nav class="mdl-navigation">
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="./index.html">Home</a>
+          <a class="mdl-navigation__link" href="./page2.html">Nutrition Snacks</a>
+          <a class="mdl-navigation__link" href="./page3.html">About Us</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </main>
+  </div>
+  <head>
+  <body style="background-color: rgb(131, 167, 224)"></body>
+
+  
+  <!--timer-->
+  <p id="clock"></p>
+  <script>
+    setInterval(() => {
+      document.getElementById("clock").innerText = new Date().toLocaleTimeString();
+    }, 1000);
+  </script>
+
+  <title>Top 8 Nutritional Foods</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+  
+    h1,
+    h3,
+    h4,
+    p {
+      text-align: center;
+    }
+  
+    ol {
+      max-width: 800px;
+      margin: auto;
+      padding-left: 0;
+      list-style-position: inside;
+    }
+  
+    li {
+      background-color: #ffffff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .food-title {
+      font-size: 24px;
+      margin: 15px 0 10px;
+    }
+  
+    .food-description {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+  </head>
+  <body>
+  
+    <!---Images are stored and have description-->
+    <h1>Top 8 Nutritional Foods</h1>
+    <p>Discover the best nutritional foods for your diet.</p>
+  
+    <main>
+      <ol>
+        <li>
+          <img src="./images/images (1).jpeg" alt="Pancake breakfast">
+          <h2 class="Happy Pancakes"></h2>
+          <a href="https://www.justonecookbook.com/souffle-pancake/" target="_blank">Pancake</a>
+          <p class="description">Try out these fluffy pancakes made with 10 grams of protien her 200 grams. Click the food name to find out how you can make this delicous treat.</p>
+        </li>
+        <br>
+  
+        <li>
+          <img src="./images/download (4).jpeg" alt="Chicken and Curry">
+          <h3 class="title">Chicken and Curry</h3>
+          <a href="https://www.allrecipes.com/recipe/46822/indian-chicken-curry-ii/" target="_blank">Chicken and Curry</a>
+          <p class="food-description">If your looking for a dish with lots of protien, then chicken and curry is the dish you will need. Having over 30 grams of protien every 300 grams, containging only chicken, curry, and rice.</p>
+        </li>
+        <br>
+  
+        <li>
+          <img src="./images/download (17).jpg" alt="Banana Pudding">
+          <h3 class="title">Banana Pudding</h3>
+          <a href="https://www.superhealthykids.com/homemade-banana-pudding-recipe/" target="_blank">Banana Pudding</a>
+          <p class="food-description">This is the best healthy treat to enjoy over a sunday evening. Made with real fruit, and having a sweeet creamy taste. This treat pudding contains a lot of vitemins and nutrents that are assential for the body and mind.</p>
+        </li>
+        <br>
+  
+        <li>
+          <img src="./images/download (16).jpg" alt="Dark Chocolate Pudding">
+          <h3 class="food-title">Dark Chocolate Pudding</h3>
+          <a href="https://chocolatecoveredkatie.com/healthy-chocolate-pudding-recipe/" target="_blank">Dark Chocolate Pudding</a>
+          <p class="food-description">The dark chocolate pudding contains many anti-oxidents and nutirents including: iron, magnesium, copper, zinc and flavonoids. With just 7 ingredients and 20 minutes you can meal-prep this meal for the whole week, so you can enjouy eating healthy and tasty foods.  </p>
+        </li>
+        <br>
+  
+        <li>
+          <img src="./images/download (15).jpg" alt="Fruit Kingdom">
+          <h3 class="food-title">Fruit Kingdom</h3>
+          <a href="https://www.pinterest.com/mzmoe1920/fruit-table-display/" target="_blank">Fruit Kingdom</a>
+          <p class="food-description">Fruits are simple but essetial in our daily lives. That's why including just 2 cups of any fruits with honey. Are tasty and lowers disease rates by over 44%.</p>  
+        </li>
+        <br>
+        
+        <li>
+          <img src="./images/download (14).jpg" alt="Soft Tacos">
+          <h3 class="food-title">Soft Tacos</h3>
+          <a href="https://life-in-the-lofthouse.com/oven-baked-soft-tacos/" target="_blank">Soft Tacos</a>
+          <p class="food-description">You can't go wrong with a soft shelled taco, with chicken, vegtables, and any sauce you perfer. These are tasty and delecious for any day of the week.</p>
+        </li>
+        <br>
+        
+        <li>
+          <img src="./images/download (5).jpeg" alt="Tuna Salade">
+          <h3 class="food-title">Tuna Salade</h3>
+          <a href="https://www.culinaryhill.com/classic-tuna-salad-sandwich/" target="_blank">Tuna Salade</a>
+          <p class="food-description">Tuna Salades contain, tuna, green leaves, and ranch. These three ingridients will make you one of the easiest and best dishes if you love your salades.</p>
+        </li>
+        <br>
+        
+        <li>
+          <img src="./images/download (12).jpg" alt="Oat Meal">
+          <h3 class="food-title">Oat Meal</h3>
+          <a href="https://www.loveandlemons.com/how-to-make-oatmeal/" target="_blank">Oat Meal</a>
+          <p class="food-description">This is one of the best breakfast meals you shoudl be making everyday. Containging oats, any type of fruit, and high fiber.
+          </p>
+        </li>
+      </ol>
+    </main>
+  </body>
+  <br>
+    <h1>Health Video</h1>
+    <p>Don't like the snacks, don't worry heres how can you start a carnivore diet.</p>
+    <!--Frame for video displayed-->
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/4WyhcJBh8kE?si=dAVeDNVzdmm5b4ZM"
+  title="YouTube video player" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <!--Css code-->
+  <style>
+    body {
+      background-color: rgb(117, 114, 213);
+    }
+  
+    h1,
+    h3,
+    h4,
+    p {
+      text-align: center;
+    }
+  
+    .dark {
+      background-color: #000000;
+      color: white;
+    }
+  
+    .demo-card-wide.mdl-card {
+      width: 300px;
+    }
+  
+    .demo-card-wide>.mdl-card__title {
+      color: #fff;
+      height: 178px;
+      background: url('./images/download (11).jpg') center / cover;
+    }
+  
+    .demo-card-wide>.mdl-card__menu {
+      color: #fff;
+    }
+  
+    h1 {
+      color: rgb(255, 132, 0);
+      font-weight: bold;
+      margin-top: auto
+    }
+  
+    h4 {
+      color: red;
+      font-weight: bold;
+    }
+
+    p {
+      color: black;
+      font-weight: bold;
+    }
+  </style>
+  </html>
